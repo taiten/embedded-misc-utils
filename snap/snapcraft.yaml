@@ -13,6 +13,6 @@ parts:
     source: https://github.com/taiten/embedded-misc-utils/archive/v0.1.tar.gz
     plugin: make
 
-app:
+apps:
         fbtest:
                 command: usr/bin/fbtest
