@@ -154,11 +154,11 @@ int main(int argc, char** argv)
 	int fd;
 
 	if (argc == 2)
-		fb_num = atoi(argv[1]);
+		sprintf(str,"%s",argv[1]);
 	else
-		fb_num = 0;
+		sprintf(str,"/dev/fb0");
 
-	sprintf(str, "/dev/graphics/fb%d", fb_num);
+//	sprintf(str, "/dev/graphics/fb%d", fb_num);
 	printf("opening %s\n", str);
 	
 	fd = open(str, O_RDWR);
