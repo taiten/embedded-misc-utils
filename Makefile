@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-I
-BUILDDIR=./build/
-INSTALLDIR=/usr/bin/
+BUILDDIR=
+INSTALLDIR=usr/bin/
 
 all: fbtest.c
 	mkdir -p $(BUILDDIR)
