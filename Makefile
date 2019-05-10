@@ -1,18 +1,15 @@
 CC=gcc
 CFLAGS=-I
-BUILDDIR=
 INSTALLDIR=usr/bin/
 
 all: fbtest.c
-	mkdir -p $(BUILDDIR)
-	$(CC) -o $(BUILDDIR)fbtest fbtest.c 
+	$(CC) -o fbtest fbtest.c 
 
 fbtest: fbtest.c
-	mkdir -p $(BUILDDIR)
-	$(CC) -o $(BUILDDIR)fbtest fbtest.c
+	$(CC) -o fbtest fbtest.c
 
 install:
-	cp $(BUILDDIR)* $(INSTALLDIR)
+	cp fbtest $(INSTALLDIR)
 
 clean:
-	rm -rf $(BUILDDIR)
+	rm -rf fbtest
