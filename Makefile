@@ -8,7 +8,7 @@ fbtest: fbtest.c
 	$(CC) -o fbtest fbtest.c
 
 install:
-	-D -m755 fbtest "$(DISTDIR)"/bin/fbtest
+	install	-D -m755 fbtest "$(DISTDIR)"/bin/fbtest
 
 clean:
 	rm -rf fbtest
